@@ -1,16 +1,15 @@
 on: push
-name: Publish Website over SFTP
+name: 🚀 Deploy website on push
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.1.0
-        with:
-          fetch-depth: 2
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
 
-      - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           ftp-server: sftp://1.studio.boardgamearena.com/fantasticfactories/
           ftp-username: Abomm
