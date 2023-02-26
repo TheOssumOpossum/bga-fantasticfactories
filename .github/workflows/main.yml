@@ -11,7 +11,6 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          ftp-server: sftp://1.studio.boardgamearena.com/fantasticfactories/
-          ftp-username: Abomm
-          ftp-password: ${{ secrets.FTPPASSWORD }}
-          git-ftp-args: --insecure # if your certificate is setup correctly this can be removed (see known-hosts argument)
+          server: sftp://1.studio.boardgamearena.com/fantasticfactories/
+          username: Abomm
+          password: ${{ secrets.FTPPASSWORD }}
