@@ -6,4 +6,4 @@ For example if you have a class to manage pathfinding in the game
 Tobago, it will be called TBGPathFinding.php (and the class inside be
 called TBGPathFinding) to avoid potential namespace collisions.
 
-testchange
+testchangess
